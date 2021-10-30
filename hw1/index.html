@@ -6,226 +6,236 @@
     <style>
         html { overflow-x:  hidden; }
     </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="src/Group.svg" ALT="logo">
-        <nav class="navigation">
-            <a class="menu">Главная</a>
-            <a class="menu">О нас</a>
-            <a class="menu">Меню</a>
-            <a class="number">8 (800) 550-04-79</a>
-            <a class="communication"><p class="comm_text">Обратный звонок</p></a>
-        </nav>
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <a href="/">
+                    <img class="logo" src="src/Group.svg" ALT="logo">
+                </a>
+                <nav class="header_navigation">
+                    <ul class="header_list">
+                        <li class="menu">
+                            <a href="/" class="menu_link">Главная</a>
+                        </li>
+                        <li class="menu">
+                            <a href="/" class="menu_link">О нас</a>
+                        </li>
+                        <li class="menu">
+                            <a href="/" class="menu_link">Касса</a>
+                        </li>
+                        <li class="menu">
+                            <a href="/" class="menu_link">Сценарии</a>
+                        </li>
+                    </ul>
+                    <a href="/" class="number"> 8 (800) 550-04-79</a>
+                    <button class="roundButton"><p class="comm_text">Обратный звонок</p></button >
+                </nav>
+                </a>
+            </div>
+        </div>
     </header>
+    <main>
+        <div class="wrapper">
+            <div class="first_block">
+                <h1 class="first_slogan">Мечта предпринимателя</h1>
+                <section class="wrapper_slogan_img">
+                    <article class="wsi_left">
+                        <h3>Твой рост, наша цель!</h3>
+                        <hr>
+                        <p class="paragraphs_logan">То, что раньше было у крупного бизнеса, теперь доступно тебе</p>
+                    </article>
+                    <article class="wsi_right">
+                        <img class="border_img_logo" src="src/logo_outline.svg" alt="your_growth_is_our_goal_border">
+                        <img class="your_growth_logo" src="src/logo_img.svg" alt="your_growth_is_our_goal">
+                    </article>
+                </section>
 
-    <section class="body_site">
-        <img class="logo_outline "src="src/logo_outline.svg" alt="logo_outline">
-        <img class="logo_imagine" src="src/logo_img.svg" alt="logo"/>
-        <article class="slogan">
-            <h1>Мечта предпринимателя
-                <p class="text1">Твой рост, наша цель!</p>
-                <hr class="hr_slogan">
-                <p class="text2">То, что раньше было у крупного бизнеса, теперь доступно тебе</p>
-            </h1>
-        </article>
-
-        <article class = "simple_with_us">
-            <img class="development_img" src="src/development_img.svg" alt="development">
-            <h2>С нами всё просто</h2>
-            <h3>Лучшее решение для  роста вашего бизнеса</h3>
-            <hr class="hr_simple_with_us">
-            <p class="p_simple_with_us">ИРИС Ритейл взял лучших на рынке провайдеров технологий, которые способны обеспечить реальный рост выручки малого или среднего предпринимателя-ритейлера</p>
-        </article>
-        
-        <article class="about_us" >
-            <img src="src/aboutUs.svg" alt="about us">
-        </article>
-
-        <article class="choose_business">
-            <p class="business_text">Выбери сферу своего бизнеса!</p>
-            <dif class="business_advantages">
-                <p class="food_trade_text">Торговля продуктами</p>
-                <article class="block_shopping">
-                    <img class="shopping_girl" src="src/shopping_girl.svg">
-                    <img class="border_shopping_girl" src="src/border_shopping_girl.svg">
+                <h1 class="second_slogan">С нами все просто</h1>
+                <section class="wrapper_slogan_img">
+                    <article class="wsis_left">
+                        <h3 class="wsis_slogan">Лучшее решение для  роста вашего бизнеса</h3>
+                        <hr>
+                        <p class="paragraphs_logan_second">ИРИС Ритейл взял лучших на рынке провайдеров технологий, которые способны обеспечить реальный рост выручки малого или среднего предпринимателя-ритейлера</p>
+                    </article>
+                    <article class="wsis_right">
+                        <img src="src/development_img.svg" alt="The best solution for the growth of your business">
+                    </article>
+                </section>
+            </div>
+            <div class="block_advantages">
+                <article class="item_advantages">
+                    <img class="block_border" src="src/subtract.png" alt="business_growth">
+                    <img src="src/icon_list.svg" alt="icon_list" class="icon1">
+                    <div class="circle"></div>
+                    <article class="inform_advantages">
+                        <h4>Сценарии<br />«Бизнес роста»</h4>
+                        <hr class="hr_advantages">
+                        <p class="p_advantages">Выбери сценарий — получи рост на 30% и более</p>
+                    </article>
                 </article>
-                <p class="other_shopping_text">Другая торговля</p>
-                <article class="block_other_shopping">
-                    <img class="other_shopping" src="src/other_shopping.svg">
-                    <img class="border_other_shopping" src="src/border_shopping_girl.svg">
+                <article class="item_advantages">
+                    <img class="block_border" src="src/subtract.png" alt="business_growth">
+                    <img src="src/icon_monitor.svg" alt="icon_list" class="icon2">
+                    <div class="circle"></div>
+                    <article class="inform_advantages">
+                        <h4>Сценарии<br />Наше ПО</h4>
+                        <hr class="hr_advantages">
+                        <p class="p_advantages">Проверим вашу ККТ на совместимость с нашим ПО</p>
+                    </article>
                 </article>
-                <p class="catering_text">Общепит</p>
-                <article class="block_catering">
-                    <img class="catering" src="src/catering.svg">
+                <article class="item_advantages">
+                    <img class="block_border" src="src/subtract.png" alt="business_growth">
+                    <img src="src/Learning.png" alt="icon_list" class="icon3">
+                    <div class="circle"></div>
+                    <article class="inform_advantages">
+                        <h4>Сценарии<br />Обучение</h4>
+                        <hr class="hr_advantages">
+                        <p class="p_advantages">20 лет работы и экспертизы в  розничном бизнесе</p>
+                    </article>
                 </article>
-
-                <p class="services_text">Услуги</p>
-                <article class="block_services">
-                    <img class="services" src="src/services.svg">
-                    <img class="border_services" src="src/border_shopping_girl.svg">
+                <article class="item_advantages">
+                    <img class="block_border" src="src/subtract.png" alt="business_growth">
+                    <img src="src/icon_cube.svg" alt="icon_list" class="icon3">
+                    <div class="circle"></div>
+                    <article class="inform_advantages">
+                        <h4>Сценарии<br />Решение из коробки</h4>
+                        <hr class="hr_advantages">
+                        <p class="p_advantages">Достань, подключи, работай</p>
+                    </article>
                 </article>
-            </dif>
-        </article>
+            </div>
 
-        <article class="business_growth_scenarios">
-            <p class="growth_scenarios_text">Сценарии роста бизнеса</p>
-            <ul class="growth_scenarios">
-                <li class="growth_scenarios_point">Рост доходов</li>
-                <li class="growth_scenarios_point">Снижение расходов</li>
-            </ul>
+            <h2 class="third_slogan">Выбери сферу своего бизнеса</h2>
 
-            <p class="tools_text">Мы даём вам инструменты, которые позволят повысить ваш доход и выйти на новый уровень прибыли</p>
-        </article>
-        <article class="about_scenarios">
-            <article class="interactive_training">
-                <p class="interactive_training_title">Интерактивное обучение</p>
-                <p class="interactive_training_text">Создаём диалоговые симуляции без навыков программирования. Организуем обучения в виртуальной и дополненой реальности. Обучение можно проходить на смартфоне, компьютере или VR-очках</p>
-                <a class="it_bottom">Заказать</a>
+            <div class="cards">
+                <div class="top_cards">
+                    <article class="card">
+                        <h3 class="card_title">Торговля продуктами</h3>
+                        <button class="slide_button">
+                            <img src="src/slide_button_img.svg" alt="slide_button_img" class="slide_button_img">
+                        </button>
+                        <div class="slide_img">
+                            <img src="src/circle_in_the_slide.svg" alt="slide_button_img" class="circle_in_the_slide">
+                            <img src="src/shopping_girl.svg" alt="shopping_girl" class="img_in_the_slide">
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card_title">Другая торговля</h3>
+                        <button class="slide_button">
+                            <img src="src/slide_button_img.svg" alt="slide_button_img" class="slide_button_img">
+                        </button>
+                        <div class="slide_img">
+                            <img src="src/circle_in_the_slide.svg" alt="slide_button_img" class="circle_in_the_slide">
+                            <img src="src/undraw_gone_shopping.svg" alt="gone_shopping" class="img_in_the_slide">
+                        </div>
+                    </article>
+                </div>
+                <div class="bottom_cards">
+                    <article class="card">
+                        <h3 class="card_title">Общепит</h3>
+                        <button class="slide_button">
+                            <img src="src/slide_button_img.svg" alt="slide_button_img" class="slide_button_img">
+                        </button>
+                        <div class="slide_img">
+                            <img src="src/catering.svg" alt="shopping_girl" class="catering_in_the_slide">
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card_title">Услуги</h3>
+                        <button class="slide_button">
+                            <img src="src/slide_button_img.svg" alt="slide_button_img" class="slide_button_img">
+                        </button>
+                        <div class="slide_img">
+                            <img src="src/circle_in_the_slide.svg" alt="slide_button_img" class="gone_shopping_circle">
+                            <img src="src/services.svg" alt="gone_shopping" class="img_gone_shopping">
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <h2>Сценарии роста бизнеса</h2>
+            <section class="business_growth_scenarios">
+                <button class="item_button">Рост доходов</button>
+                <button class="item_button">Снижение расходов</button>
+            </section>
+            <p class="scenario_growth_p">Мы даём вам инструменты, которые позволят повысить ваш доход и выйти на новый уровень прибыли</p>
+            <section class="orders">
+                <section class="orders_top">
+                    <article class="orders_text">
+                        <h5 class="orders_title">Интерактивное обучение</h5>
+                        <hr class="orders_hr">
+                        <p class="orders_p">Создаём диалоговые симуляции без навыков программирования. Организуем обучения в виртуальной и дополненой реальности. Обучение можно проходить на смартфоне, компьютере или VR-очках</p>
+                        <button class="orders_button">Заказать</button>
+                    </article>
+                    <article class="orders_img_top">
+                        <img src="src/interactive_learning.svg" alt="interactive_learning.svg" class="interactive_learning">
+                        <img src="src/interactive_learning_income.svg" alt="interactive_learning_income.svg" class="interactive_learning_income">
+                    </article>
+                </section>
+                <section class="orders_bottom">
+                    <article class="ap_orders_text">
+                        <h5 class="orders_title">Автоматические предзаказы</h5>
+                        <hr class="orders_hr">
+                        <p class="orders_p">Анализируем наполненость полки, распознаем товары и проверяем выкладку и ассортимент. Контролируем работу кассира, фиксируем ошибки и нарушения в процессе его работы</p>
+                        <button class="orders_button">Заказать</button>
+                    </article>
+                    <article class="orders_img_bottom">
+                        <img src="src/automatic_pre-orders.svg" alt="automatic_pre-orders.svg" class="automatic_pre-orders">
+                        <img src="src/automatic_pre-orders_income.svg" alt="automatic_pre-orders_income.svg" class="automatic_pre-orders_income">
+                    </article>
+                </section>
+            </section>
 
-                <img class="it_img" src="src/it_img.svg">
-                <img class="it_income" src="src/it_income.svg">
-                <img class="it_border_img" src="src/it_border_img.svg">
-            </article>
-            <article class="automatic_pre-orders">
-                <p class="automatic_pre-orders_title">Автоматические предзаказы</p>
+            <h2>Наши кассы</h2>
+            <section class="business_growth_scenarios">
+                <button class="item_button">О кассе</button>
+                <button class="item_button">Видео</button>
+                <button class="item_button">Характеристики</button>
+            </section>
 
-                <p class="automatic_pre-orders_text">Анализируем наполненость полки, распознаем товары и проверяем выкладку и ассортимент. Контролируем работу кассира, фиксируем ошибки и нарушения в процессе его работы</p>
-                <a class="automatic_pre-orders_bottom">Заказать</a>
+            <section class="our_cash_desks">
+                <div class="left_block_cash">
+                    <h2 class="our_cash_desks_title">НЕВА — 01 — Ф</h2>
+                    <h3 class="our_cash_desks_subtitle">Идеальное решение для малого бизнеса</h3>
+                    <hr class="our_cash_desks_hr">
+                    <p class="our_cash_desks_text1">Устройство работает на базе Android, оснащена семидюймовым сенсорным экраном, портами USB, Ethernet и сетевыми проотколами GPRS, Wi-Fi, Bluetooth</p>
+                    <p class="our_cash_desks_text2">Кассовое ядро позволяет интегрировать с ККТ Нева — 01 — Ф любые сторонние приложения</p>
+                    <button class="orders_button">Заказать</button>
+                </div>
+                <div class="right_block_cash">
+                    <img src="src/logo_outline.svg" alt="block_cash" class="background_cash_desks"/>
+                    <img src="src/white_oval.svg" alt="block_cash" class="cash_desks_oval"/>
+                    <img src="src/tcr.svg" alt="box_office" class="box_office"/>
+                    <div class="wrapper_block_cash_cost">
+                        <h3 class="block_cash_cost">от 3 650</h3>
+                        <img src="src/currency.svg" alt="currency" class="currency">
+                    </div>
+                </div>
+            </section>
 
-                <img class="po_border" src="src/po_border.svg">
-                <img class="po_img" src="src/po_img.svg">
-                <img class="po_income" src="src/po_income.svg">
-            </article>
-        </article>
 
+            <h2 class="title_choose">Выбери то, что нужно тебе</h2>
+            <section class="business_growth_scenarios">
+                <button class="item_button_choose">Купить</button>
+                <button class="item_button_choose">Аренда</button>
+                <button class="item_button_choose">Наше ПО</button>
+            </section>
+            <p class="scenario_growth_p">Выбери решение, которое максимально подходит твоему бизнесу, и посмотри прогнозируемый рост выручки</p>
 
-        <p class="our_cash_registers_title">Наши кассы</p>
-        <article class="our_cash_registers">
-            <article class="text">
-                <ul class="our_cash_registers_list">
-                    <li class="our_cash_registers_point">О кассе</li>
-                    <li class="our_cash_registers_point">Видео</li>
-                    <li class="our_cash_registers_point">Характеристики</li>
-                </ul>
-                <p class="name_of_the_cash_register">НЕВА — 01 — Ф</p>
-                <p class="title_of_the_cash_register">Идеальное решение для малого бизнеса</p>
-                <hr class="hr_the_cash_register">
-                <p class="text1_of_the_cash_register">Устройство работает на базе Android, оснащена семидюймовым сенсорным экраном, портами USB, Ethernet и сетевыми проотколами GPRS, Wi-Fi, Bluetooth</p>
-                <p class="text2_of_the_cash_register">Кассовое ядро позволяет интегрировать с ККТ Нева — 01 — Ф любые сторонние приложения</p>
+            <section class="form">
+                <article class="left_form">
 
-                <a class="bottom_the_cash_register">Заказать</a>
-            </article>
-                <img class="border_the_cash_register" src="src/border_the_cash_register.svg" alt="our_cash_img">
-                <img class="border_white_the_cash_register" src="src/border_white_the_cash_register.svg" alt="our_cash_img">
-                <img class="tcr" src="src/tcr.svg" alt="our_cash_img">
-            <p class="cost">от 3 650</p>
-            <img class="currency" src="src/currency.svg">
-        </article>
-
-        <p class="choose_what_you_heed_title">Выбери то, что нужно тебе</p>
-        <ul class="choose_what_you_need_list">
-            <li class="cwyn_point">Купить</li>
-            <li class="cwyn_point">Аренда</li>
-            <li class="cwyn_point">Наше ПО</li>
-        </ul>
-        <p class="choose_what_you_heed_text">Выбери решение, которое максимально подходит твоему бизнесу, и посмотри прогнозируемый рост выручки</p>
-        <article class="choose_what_you_need">
-            <article class="forms">
-                <article class="form_to_fill">
-                    <p class="kkt">ККТ</p>
-                    <form class="kkt_form_name" action="#">
-                        <p><select class="kkt_form">
-                            <option class="option_one">Нева — 01 — Ф</option>
-                        </select></p>
-                    </form>
-
-                    <p class="business_growth_scenario">Сценарий роста бизнеса</p>
-                    <form class="bgs" action="#">
-                        <p><select class="business_growth_scenario_form">
-                            <option class="bgs_option_one">Оценка эффективности рекламы</option>
-                        </select></p>
-                    </form>
-
-                    <p class="business_growth_scenario">Сценарий роста бизнеса</p>
-                    <form class="bgs" action="#">
-                        <p><select class="business_growth_scenario_form">
-                            <option class="bgs_option_one">Интерактивные видео уроки</option>
-                        </select></p>
-                    </form>
-
-                    <a href="#" class="add_scenario_a">
-                        <img src="src/plus.svg">
-                        <p class="add_scenario">Добавить сценарий</p>
-                    </a>
-                    <p class="current_revenue">Текущая выручка</p>
-                    <form class="revenue_growth_form">
-                        <p><option class="rgf_option_one">240 000 руб/мес</option></p>
-                        <label class="slider_one">
-                            <input class="slider" type="range" min="0" max="100">
-                        </label>
-                    </form>
                 </article>
+                <article class="right_form">
 
-                <form class="application_form">
-                    <p class="projected_revenue_growth">Прогнозируемый рост выручки</p>
-                    <p class="proceeds">25 000 руб/мес</p>
-                    <hr class="proceeds_hr">
-                    <p class="total">Итого</p>
-                    <p class="expenses">Расходы на СРБ</p>
-                    <p class="expenses_on_srb">650 руб/мес</p>
-                    <p class="expenses_kkt">ККТ</p>
-                    <p class="expenses_on_kkt">3650 руб/мес</p>
-                    <p class="application">Оставить заявку</p>
-                </form>
-            </article>
-
-        </article>
-
-    </section>
-
-    <footer>
-        <article class="contact_information">
-            <p class="ci_text">Оставьте заявку, и мы свяжемся с вами в течение 24 часов</p>
-            <img class="logo_footer" src="src/logo_footer.svg">
-            <ul class="footer_list">
-                <li class="footer_list_point">
-                    <p class="footer_list_action">Заказать</p>
-                    <p class="email_phone">iris-retail@iris.ru</p>
-                </li>
-                <li>
-                    <p class="footer_list_action">Наши контакты</p>
-                    <p class="email_phone">8 (800) 550-04-79</p>
-                </li>
-            </ul>
-            <p class="legal">Лигал, который занимает два или три предложения. Будет находиться здесь, в конце футера. Тут будет прописана юридическая информация, чтобы с точки зрени закона все было ок %)</p>
-        </article>
-        <article class="application_form_footer">
-            <ul class="application_footer">
-                <li class="footer_application_point">
-                    <label class="label_f">Город</label>
-                    <input class="text_input" type="text" name="website" placeholder="Москва" required/>
-                </li>
-                <li class="footer_application_point">
-                    <label class="label_f">Имя</label>
-                    <input class="text_input" type="text" placeholder="Иванов Иван Иванович" required/>
-                </li>
-                <li class="footer_application_point">
-                    <label class="label_f">Телефон</label>
-                    <input class="text_input" type="text" placeholder="+7" required/>
-                </li>
-                <li class="footer_application_point">
-                    <label class="label_f_a">
-                        <p class="p_checkbox"><input class="checkbox" type="checkbox" name="approval">Я согласен с условиями сбора
-                            и обработки персональных данных</p>
-                    </label>
-                </li>
-            </ul>
-            <a class="leave_request">Оставить заявку</a>
-        </article>
-    </footer>
-
+                </article>
+            </section>
+        </div>
+    </main>
 
 </body>
 </html>

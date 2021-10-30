@@ -1,0 +1,521 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+
+    background-color: #E5E5E5;
+}
+h1{
+    font-weight: bold;
+    font-size: 55px;
+}
+h2{
+    margin-top: 11%;
+
+    font-weight: bold;
+    font-size: 50px;
+
+    text-align: center;
+}
+h3{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+h5{
+    font-size: 35px;
+}
+
+.wrapper{
+    max-width: 1086px;
+    margin: 0 auto;
+}
+/*header*/
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 0.78%;
+
+    z-index: 3;
+}
+.header_wrapper{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 7.1%;
+}
+
+.header_list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.header_navigation{
+    margin: 8px 23%;
+    display: flex;
+    flex-direction: row;
+}
+.menu, .communication{
+    display: inline-block;
+}
+
+.menu{
+    margin-right: 6.27%;
+}
+
+.menu:hover{
+    border-bottom: 2px solid #3F3D56;
+}
+.menu:last-child{
+    margin-right: 0;
+}
+.menu_link{
+    font-family: "Source Sans Pro", sans-serif;
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+}
+.number{
+    display: flex;
+    align-items: center;
+
+    color: #3F3D56;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 86px;
+
+    width: 100%;
+}
+.roundButton{
+    margin-left: 17px;
+    padding: 10px 7px;
+    border: 0;
+    background: linear-gradient(70.6deg, #35CC79 10.03%, rgba(52, 125, 85, 0.65) 139.7%);
+    border-radius: 20px;
+    color: #FFFFFF;
+
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+}
+/*Main*/
+
+/*slogan*/
+.first_slogan{
+    margin-top: 4.97%;
+}
+.wrapper_slogan_img{
+    display: flex;
+    flex-direction: row;
+}
+.wsi_left{
+    margin-top: 12%;
+}
+hr{
+    margin-left: 0;
+    width: 200px;
+    height: 0;
+}
+.paragraphs_logan{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+
+}
+.wsi_right{
+    margin-top: 8%;
+    margin-left: 5.6%;
+}
+.border_img_logo{
+    margin-top: -10%;
+}
+.your_growth_logo{
+    margin-top: -85%;
+}
+
+.paragraphs_logan_second{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+}
+.second_slogan{
+    margin-top: 7%;
+    text-align: center;
+}
+.wsis_left, .wsis_right{
+    margin-top: 11%;
+}
+/*block_advantages*/
+.block_advantages{
+    height: 283px;
+    margin-top: 13%;
+    display: flex;
+    flex-direction: row;
+}
+
+.block_border{
+    width: 249px;
+    height: 211px;
+
+    z-index: -1;
+}
+.icon1, .icon2, .icon3{
+    position: relative;
+    margin-top: -183%;
+    z-index: 1;
+}
+.icon3{
+    margin-left: 40%;
+}
+.icon2{
+    margin-left: 42%;
+}
+.icon1{
+    margin-left: 44%;
+}
+
+.circle{
+    position: relative;
+    margin-left: 35%;
+    margin-top: -112%;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: linear-gradient(70.6deg, #35CC79 10.03%, rgba(52, 125, 85, 0.65) 139.7%);
+
+}
+.item_advantages{
+    margin-left: 2.7%;
+}
+.item_advantages:first-child{
+    margin-left: 0;
+}
+
+.inform_advantages{
+    text-align: center;
+
+    margin-left: 1.85%;
+    margin-top: 4.25%;
+}
+.hr_advantages{
+    background-color: #B4ABAB;
+    border: 3px solid #B4ABAB;
+    margin-top: 7.1%;
+    margin-left: 9.2%;
+    margin-right: 6.8%;
+}
+
+.p_advantages{
+    font-size: 20px;
+    font-weight: 400;
+}
+/*choose the scope of your business*/
+.third_slogan{
+    margin-top: 11%;
+
+    color: #3F3D56;
+}
+
+.cards{
+    margin-top: 11%;
+    height: 640px;
+}
+
+.top_cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    margin-right: 2.7%;
+    width: 525px;
+    height: 305.03px;
+
+    background: linear-gradient(70.6deg, #35CC79 10.03%, rgba(52, 125, 85, 0.65) 139.7%);
+    border: 1.5px solid #3F3D56;
+    box-shadow: 0 0 1.04139px rgba(0, 0, 0, 0.08), 0px 1.04139px 12.4967px rgba(0, 0, 0, 0.08);
+    border-radius: 7.28973px;
+}
+.card:last-child{
+    margin-right: 0;
+}
+
+.card_title{
+    margin-top: 7.5%;
+    margin-left: 6.28%;
+    line-height: 12px;
+}
+
+.slide_button{
+    margin-top: 34.8%;
+    margin-left: 6.28%;
+
+    position: relative;
+}
+
+.circle_in_the_slide{
+    margin-top: -42.65%;
+    margin-left: 56.19%;
+}
+
+.img_in_the_slide{
+    margin-top: -71%;
+    margin-left: 44.38%;
+}
+
+.bottom_cards{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2.775%;
+}
+
+.catering_in_the_slide{
+    margin-top: -55%;
+    margin-left: 37.5%;
+}
+
+.gone_shopping_circle{
+    margin-top:-48%;
+    margin-left: 58.29%;
+}
+
+.img_gone_shopping{
+    margin-top: -70%;
+    margin-left: 43.42%;
+}
+/*business growth scenarios*/
+.business_growth_scenarios{
+    margin-top: 4.8%;
+    margin-left: 17.5%;
+    display: flex;
+    flex-direction: row;
+}
+.item_button{
+    margin-left: 14%;
+}
+
+.item_button:first-child{
+    margin-left: 0;
+}
+
+.item_button:hover, .item_button_choose:hover{
+    background: linear-gradient(70.6deg, #35CC79 10.03%, rgba(52, 125, 85, 0.65) 139.7%);
+    border-radius: 20px;
+    padding: 13px 27px;
+
+    font-size: 35px;
+}
+.scenario_growth_p{
+    text-align: center;
+    margin: 6.76% 8.6% 0;
+}
+/*orders*/
+.orders{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 12.96%;
+    height: 788px;
+}
+
+.orders_top{
+    display: flex;
+    flex-direction: row;
+}
+
+.orders_bottom{
+    display: flex;
+    flex-direction: row-reverse;
+
+    margin-top: 7.2%;
+}
+
+.orders_title{
+    font-family: "Source Code Pro", sans-serif;
+    line-height: 30px;
+}
+
+.orders_hr{
+    border: 3px solid #B4ABAB;
+    margin-top: 3.91%;
+    margin-bottom: 3.91%;
+    width: 200px;
+}
+.orders_p{
+    width: 513px;
+    height: 187px;
+
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.orders_button{
+    margin-top: 7%;
+
+    background: linear-gradient(70.6deg, #35CC79 10.03%, rgba(52, 125, 85, 0.65) 139.7%);
+    border-radius: 7px;
+    padding: 22px 80.5px;
+
+    line-height: 18px;
+    font-size: 25px;
+}
+.orders_img_top, .orders_img_bottom{
+    width: 525px;
+    height: 355px;
+
+    background: linear-gradient(70.6deg, #35CC79 10.03%, rgba(52, 125, 85, 0.65) 139.7%);
+    box-shadow: 0 0 1.04139px rgba(0, 0, 0, 0.08), 0px 1.04139px 12.4967px rgba(0, 0, 0, 0.08);
+    border-radius: 7.28973px;
+}
+
+.orders_img_top{
+    margin-left: 2.87%;
+}
+.orders_img_bottom, .orders_img_top{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.interactive_learning{
+    margin-top: 20px;
+    margin-left: 5.9%;
+}
+.interactive_learning_income{
+    margin-left: -15px;
+    margin-top: 258px;
+}
+
+.ap_orders_text{
+    margin-left: 3%;
+}
+
+.automatic_pre-orders{
+    margin-top: 54px;
+    margin-left: 7.6%;
+}
+
+.automatic_pre-orders_income{
+    margin-top: 257px;
+    margin-left: -30px;
+}
+
+/*our_cash_desks*/
+.our_cash_desks{
+    margin-top: 9.72%;
+
+    height: 607px;
+    display: flex;
+    flex-direction: row;
+}
+
+.our_cash_desks_title{
+    text-align: start;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.our_cash_desks_subtitle{
+    margin-top: 10.93%;
+    width: 491px;
+    height: 80px;
+}
+.our_cash_desks_hr{
+    margin-top: 4%;
+    margin-bottom: 0;
+    width: 200px;
+
+    border: 3px solid #B4ABAB;
+}
+
+.our_cash_desks_text1, .our_cash_desks_text2{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.our_cash_desks_text1{
+    margin-top: 4.224%;
+
+    width: 491px;
+    height: 120px;
+}
+.our_cash_desks_text2{
+    margin-top: 2.47%;
+    margin-bottom: -14px;
+    width: 491px;
+    height: 90px;
+}
+
+.right_block_cash{
+    position: relative;
+}
+
+.background_cash_desks{
+    margin-left: 16%;
+
+    z-index: 0;
+}
+
+.cash_desks_oval{
+    margin-top: -83%;
+    margin-left: 37%;
+
+    z-index: 1;
+}
+
+.box_office{
+    z-index: 2;
+
+    margin-top: -87%;
+    margin-left: 28%;
+}
+.wrapper_block_cash_cost{
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 38.5%;
+}
+
+.block_cash_cost{
+    font-weight: bold;
+}
+
+.currency{
+    margin-left: 5px;
+}
+
+.title_choose{
+    margin-top: 5%;
+}
+
+.item_button_choose{
+    margin-left: 11.57%;
+}
+.item_button_choose:first-child{
+    margin-left: 0;
+}
+
+/*form*/
+
+form.
+
+
+
+
+
