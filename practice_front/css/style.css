@@ -29,6 +29,7 @@ form{
 input{
     font-family: Inter, sans-serif;
     font-weight: 400;
+    font-size: 15px;
 
     margin-bottom: 24px;
 
@@ -50,6 +51,7 @@ button{
 
     text-decoration: none;
     font-family: Inter, sans-serif;
+    font-size: 17px;
     font-weight: 700;
 
     color: #FFFFFF;
