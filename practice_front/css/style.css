@@ -1,0 +1,61 @@
+/* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/inter-v3-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../font/inter-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/inter-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../font/inter-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../font/inter-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../font/inter-v3-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+main{
+    margin: 50%;
+    box-sizing: border-box;
+
+    width: 240px;
+    height: 192px;
+
+    background: #E5E5E5;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+
+    margin-bottom: 24px;
+
+    height: 48px;
+    width: 240px;
+
+    border: 1px solid #ECEBED;
+    box-sizing: border-box;
+    box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+}
+
+button{
+    padding: 14px 16px;
+    border: none;
+    font: inherit;
+    height: 48px;
+    width: 240px;
+
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+
+    color: #FFFFFF;
+    background: #6979F8;
+    border-radius: 6px;
+    text-align: center;
+}
+
+
