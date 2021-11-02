@@ -1,24 +1,11 @@
 function minSum(sum){
+    let arr = [1000, 500, 200, 100, 50];
     let k = 0;
-    while (sum - 1000 >= 0) {
-        sum -= 1000;
-        k++;
-    }
-    while (sum - 500 >= 0) {
-        sum -= 1000;
-        k++;
-    }
-    while (sum - 200 >= 0) {
-        sum -= 1000;
-        k++;
-    }
-    while (sum - 100 >= 0) {
-        sum -= 1000;
-        k++;
-    }
-    while (sum - 50 >= 0) {
-        sum -= 1000;
-        k++;
+    for (let i = 0; i < arr.length; i++) {
+        while (sum - arr[i] >= 0) {
+            sum -= arr[i];
+            k++;
+        }
     }
     return k;
 }
