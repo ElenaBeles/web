@@ -1,0 +1,69 @@
+@import "/src/app/styles/mixins"
+
+.wrapper
+  margin: 25.9% auto
+  box-sizing: border-box
+
+  max-width: 375px
+  max-height: 1024px
+
+  text-align: center
+
+.logo
+  margin-bottom: 111px
+
+.form
+  display: flex
+  flex-direction: column
+
+  font-size: 17px
+
+.input
+  padding: 16px 19px
+
+  border: none
+  border-bottom: 0.5px solid #000000
+
+  text-align: center
+  font-weight: 400
+  &:focus
+    outline: none
+
+.link_registration
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+  margin-top: 52px
+  margin-left: 4.26%
+  margin-right: 4.26%
+
+a
+  text-decoration: none
+  color: $c-main
+
+.link_auth
+  font-weight: bold
+
+.button_in
+  display: block
+
+  margin: 0 auto
+  margin-top: 29.7%
+
+  border-radius: 25px
+  height: 50px
+  min-width: 42.4%
+
+  box-sizing: border-box
+  padding: 14px 7px
+  font-weight: 600
+  border: 3px solid $c-main
+  color: $c-main
+  background: #FFFFFF
+
+  &[disabled]
+    background: rgba(116, 116, 128, 0.08)
+    color: rgba(60, 60, 67, 0.3)
+    border: none

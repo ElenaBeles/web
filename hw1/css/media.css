@@ -1,0 +1,29 @@
+@media only screen and (max-device-width : 375px) {
+    header{
+        display: none;
+    }
+
+    .wrapper{
+        margin: 0 auto;
+    }
+
+    h1, h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    h5{
+        font-size: 25px;
+    }
+
+    body{
+        font-size: 18px;
+    }
+}

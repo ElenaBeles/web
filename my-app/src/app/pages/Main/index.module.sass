@@ -1,0 +1,47 @@
+@import "/src/app/styles/mixins"
+
+.header
+  width: 100%
+
+.button_filters
+  display: flex
+  flex-direction: row
+
+  margin-top: 33px
+  margin-bottom: 42px
+  width: 100%
+  margin-left: 4%
+
+.block_thumbnails
+  display: grid
+  grid-template-columns: 24% 24% 24% 24%
+  gap: 3.6%
+
+.film
+  height: 190px
+  &_poster
+    position: absolute
+    z-index: -1
+    max-width: 103px
+    max-height: 160px
+  &_rate
+    margin-left: 66%
+    margin-top: 6.4%
+
+    width: 24px
+    height: 15px
+    background: #FFFFFF
+    border: 1px solid $c-main
+    border-radius: 14px
+    color: $c-main
+    font-size: 10px
+    text-align: center
+  &_title
+    margin-top: 134%
+    font-size: 12px
+
+.block_list a, .link_film
+  color: black
+
+.card_format_filter
+  margin: auto

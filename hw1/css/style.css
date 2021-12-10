@@ -229,6 +229,11 @@ hr{
 .p_advantages{
     font-size: 20px;
     font-weight: 400;
+
+
+    text-align: center;
+    margin: auto;
+    max-width: 82%;
 }
 /*choose the scope of your business*/
 .third_slogan{

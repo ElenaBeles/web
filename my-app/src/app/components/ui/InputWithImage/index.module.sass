@@ -1,0 +1,35 @@
+Input
+  border: none
+  background-color: transparent
+  padding-left: 12px
+
+  height: 21px
+  display: inline
+  &:focus,:hover
+    outline: none
+
+.wrapper_InputWithImg
+  display: flex
+  align-items: center
+  box-sizing: border-box
+  padding: 7px 8px
+  & Input
+    font-size: 18px
+    line-height: 21px
+  &:not(:last-child)
+    margin-right: 26px
+
+.wrapper_InputWithImg_active
+  display: flex
+  align-items: center
+  box-sizing: border-box
+  padding: 7px 8px
+
+  background: #002DFF
+  border-radius: 21.5px
+  & Input
+    color: #FFFFFF
+    font-size: 18px
+    line-height: 21px
+  &:not(:last-child)
+    margin-right: 26px

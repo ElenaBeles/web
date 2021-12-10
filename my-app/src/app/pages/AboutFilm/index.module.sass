@@ -1,0 +1,99 @@
+@import "/src/app/styles/mixins"
+
+.wrapper
+  display: flex
+  flex-direction: row
+
+  width: 41.6%
+  margin-top: 160px
+  margin-left: 27.2%
+
+.poster
+  width: 44.5%
+  height: 417px
+
+.info_film
+  margin-left: 38px
+
+.title
+  margin: 0
+  font-size: 36px
+  line-height: 20px
+  height: 52px
+
+.img_poster
+  width: 100%
+
+.info
+  display: flex
+  flex-direction: row
+  text-align: center
+
+  margin-top: 15px
+  &_year
+    padding: 5px
+    font-weight: 600
+    font-size: 16px
+    line-height: 16px
+  &_rate
+    margin-left: 5px
+    box-sizing: border-box
+    padding: 5px 8px
+    font-weight: 600
+    font-size: 14px
+    line-height: 12px
+
+    color: #002DFF
+    border: 2px solid $c-main
+    border-radius: 14px
+
+.addCollectionButton
+  color: $c-main
+
+.info_film_buttons
+  display: flex
+  flex-direction: row
+
+  margin-top: 25px
+
+.button_active, .button_disabled
+  box-sizing: border-box
+  padding: 8px 13px
+
+  font-weight: 500
+  font-size: 18px
+  line-height: 21px
+  border-radius: 21.5px
+  color: #FFFFFF
+
+.button
+  &_active
+    background: $c-main
+  &_disabled
+    background: #DADADA
+    margin-left: 12px
+
+.film
+  &_description
+    margin-top: 20px
+    max-width: 294px
+
+    font-size: 16px
+    line-height: 16px
+  &_genres
+    display: flex
+    flex-direction: row
+
+    margin-top: 18px
+  &_genre
+    border: 2px solid #000000
+    box-sizing: border-box
+    border-radius: 14px
+    padding: 6px 8px
+
+    font-weight: 600
+    font-size: 15px
+    line-height: 20px
+    &:not(:last-child)
+      margin-right: 10px
+
