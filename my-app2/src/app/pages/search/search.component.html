@@ -1,0 +1,96 @@
+<app-header>
+</app-header>
+
+<main>
+  <div class="title__wrapper">
+    <h1 class="title">О фильме</h1>
+    <form class = "formSwitch" [formGroup]="formSwitch">
+      <app-toggle
+        formControlName="toggle">
+      </app-toggle>
+    </form>
+  </div>
+  <div class="film__search" *ngIf="isFilmSearch">
+    <form [formGroup]="form">
+      <h3 class = "form_input_title">
+        Название
+      </h3>
+      <div class = "form_input_wrapper">
+        <input class = "form_input"
+               type="text"
+               formControlName="searchInput"
+               placeholder="Например, Титаник">
+        <button (click)="deleteSearchInput()"
+                class = form_input_button
+                type="reset">
+          <img src="/assets/img/icon_delete.svg"
+               alt="">
+        </button>
+      </div>
+
+      <div class="film__container">
+        <div class="film" *ngFor="let item of films$ | async">
+          <img src={{item.image}}
+               alt="">
+
+          <div class="film__info">
+            <a routerLink="['/',{{item.id}}]">
+              <h2>{{item.title}}</h2>
+            </a>
+            <span>{{item.year}}</span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="film__add" *ngIf="!isFilmSearch">
+    <div class="formFilmInfo__wrapper">
+      <form [formGroup]="formFilmInfo">
+        <div class="formFilmInfo__point__wrapper">
+          <h3 class = "formFilmInfo__point__title">Название</h3>
+          <div class="form_input_wrapper">
+            <input class = "formFilmInfo__point"
+                   type="text"
+                   formControlName="addFilmInput__title"
+                   placeholder="Например, Титаник">
+          </div>
+        </div>
+        <div class="formFilmInfo__point__wrapper">
+          <h3 class = "formFilmInfo__point__title">Год</h3>
+          <div class="form_input_wrapper">
+            <input class = "formFilmInfo__point"
+                   type="text"
+                   formControlName="addFilmInput__year"
+                   placeholder="Укажите год выхода фильма">
+          </div>
+        </div>
+        <div class="formFilmInfo__point__wrapper">
+          <h3 class = "formFilmInfo__point__title">Описание</h3>
+          <div class="form_input_wrapper">
+            <input class = "formFilmInfo__point"
+                   type="text"
+                   formControlName="addFilmInput__description"
+                   placeholder="Напишите пару слов о сюжете">
+          </div>
+        </div>
+        <div class="formFilmInfo__point__wrapper">
+          <h3 class = "formFilmInfo__point__title">Жанр</h3>
+          <app-genre-search></app-genre-search>
+        </div>
+        <div class="formFilmInfo__point__wrapper">
+          <h3 class = "formFilmInfo__point__title">Постер</h3>
+          <img class="formFilmInfo_avatar" src="/assets/img/Platter.svg" alt="">
+        </div>
+
+        <div class="wrapper_addFilm_button">
+          <app-button theme="SECONDARY" type="submit" (click)="addFilm()">
+            <img src="/assets/img/icon_plus_blue.svg" alt="">
+            Сохранить
+          </app-button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>

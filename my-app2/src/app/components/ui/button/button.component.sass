@@ -1,0 +1,24 @@
+@import "../../../styles/mixins"
+
+\:host
+  ::ng-deep
+    img
+      margin-right: 12px
+
+.btn
+  border: none
+  border-radius: 21.5px
+  background: none
+  display: flex
+  align-items: center
+  padding: 8px 12px
+  @include regular-text
+
+  &--primary
+    color: white
+    background: $c-primary
+
+  &--secondary
+    color: $c-primary
+    background: #FFFFFF
+    border: 2px solid $c-primary

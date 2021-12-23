@@ -1,0 +1,10 @@
+<button
+  [type]="type"
+  class="btn"
+  [class.btn--primary]="theme === 'PRIMARY'"
+  [class.btn--secondary]="theme === 'SECONDARY'"
+  (click)="$event"
+>
+  <ng-content></ng-content>
+</button>
+
