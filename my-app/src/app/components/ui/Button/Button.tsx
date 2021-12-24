@@ -1,16 +1,16 @@
 import React from 'react';
-import styles from './index.module.scss';
 import {IButton} from "./index.interfaces";
 
 export function Button(props: IButton){
 
-    const { text, onChange, onClick, className } = props;
+    const { text, disabled, onClick, className, type } = props;
 
     return(
         <button
-            disabled = { onChange }
+            disabled = { disabled }
             className = { className }
             onClick = { onClick }
+            type = { type }
         >
             { text }
         </button>

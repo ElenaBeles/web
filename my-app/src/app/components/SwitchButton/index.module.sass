@@ -1,17 +1,51 @@
-.react_switch_checkbox
-  height: 0
-  width: 0
-  position: absolute
-  visibility: hidden
-
 .react_switch
   cursor: pointer
-  width: 75%
+  width: 343px
   height: 32px
-  background: rgba(118, 118, 128, 0.12)
+  background: #7676801E
   border-radius: 8.91px
   position: relative
   transition: background-color 0.2s
+  &_checkbox
+    height: 0
+    width: 0
+    position: absolute
+    visibility: hidden
+  & .react_switch__button
+    position: absolute
+    z-index: 0
+    top: 2px
+    left: 2px
+    width: 50%
+    height: 28px
+    transition: 0.2s
+    background: #FFFFFF
+    border: 0.5px solid rgba(black, 0.04)
+    box-shadow: 0 3px 8px rgba(black, 0.12), 0 3px 1px rgba(black, 0.04)
+    border-radius: 6.93px
+  &_checkbox:checked + .react_switch_button
+    left: calc(100% - 2px)
+    transform: translateX(-100%)
+  &_checkbox:active + .react_switch_button
+    width: 50%
+  &_labels
+    z-index: 0
+    height: 100%
+    & span
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 50%
+      height: 100%
+
+      font-weight: 600
+      font-size: 15px
+      line-height: 20px
+      &:first-child
+        left: 0
+      &:last-child
+        right: 0
 
 .react_switch .react_switch_button
   position: absolute
@@ -22,38 +56,10 @@
   height: 28px
   transition: 0.2s
   background: #FFFFFF
-  border: 0.5px solid rgba(0, 0, 0, 0.04)
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), 0 3px 1px rgba(0, 0, 0, 0.04)
+  border: 0.5px solid rgba(black, 0.04)
+  box-shadow: 0 3px 8px rgba(black, 0.12), 0 3px 1px rgba(black, 0.04)
   border-radius: 6.93px
 
 
-.react_switch_checkbox:checked + .react_switch_button
-  left: calc(100% - 2px)
-  transform: translateX(-100%)
 
-.react_switch_checkbox:active + .react_switch_button
-  width: 50%
-
-.react_switch_labels
-  z-index: 0
-  height: 100%
-  font: 14pt "Segoe UI", Verdana, sans-serif
-
-.react_switch_labels span
-  position: absolute
-  display: flex
-  align-items: center
-  justify-content: center
-  width: 50%
-  height: 100%
-
-  font-weight: 600
-  font-size: 15px
-  line-height: 20px
-
-.react_switch_labels span:first-child
-  left: 0
-
-.react_switch_labels span:last-child
-  right: 0
 

@@ -1,4 +1,4 @@
 export interface IBaseLayout {
-    title: string
-    children: any
+    title: string;
+    children: any;
 }

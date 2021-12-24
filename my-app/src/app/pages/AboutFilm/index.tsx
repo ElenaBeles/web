@@ -4,9 +4,7 @@ import styles from './index.module.sass';
 import { Header } from "../../components/Header/Header";
 import {useLocation, useParams} from "react-router";
 import {useStores} from "../../utils";
-import {InputWithImg} from "../../components/ui/InputWithImage/InputWithImg";
 
-import icon_plus from "../../components/Header/img/img_plus.svg"
 import {Button} from "../../components/ui/Button/Button";
 
 export const AboutFilm = observer ( () => {
@@ -33,11 +31,13 @@ export const AboutFilm = observer ( () => {
                         <Button
                             className={ styles.button_active}
                             text = "Буду&nbsp;смотреть"
+                            type={ "button" }
                         />
                         <Button
                             className={ styles.button_disabled}
-                            onChange = { true }
+                            disabled = { true }
                             text = "Просмотрено"
+                            type={ "button" }
                         />
                     </div>
 

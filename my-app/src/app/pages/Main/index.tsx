@@ -1,9 +1,9 @@
 import { observer } from "mobx-react";
 import styles from './index.module.sass';
 
-import icon_list from './img/Icon_List.svg';
-import icon_thumbnails from './img/Icon_Thumbnails.svg';
-import icon_item_list from './img/IconItem.svg';
+import icon_list from '../../../assets/img/Icon_List.svg';
+import icon_thumbnails from '../../../assets/img/Icon_Thumbnails.svg';
+import icon_item_list from '../../../assets/img/IconItem.svg';
 
 import { useState } from "react";
 import { useStores } from "../../utils";
@@ -33,7 +33,7 @@ export const Main = observer ( () => {
                     <div className = { styles.wrapper_main }>
                         <div className = { styles.button_filters }>
                             <SwitchButton
-                                isOn={ isWatch }
+                                checked ={ isWatch }
                                 onChange={ () => setIsWatch(!isWatch) }
                                 textLeft={ "Буду смотреть" }
                                 textRight={ "Просмотрено" }
@@ -56,7 +56,6 @@ export const Main = observer ( () => {
                             }
                         </div>
                         {isList ?
-                               // тут список
                                <div className = { styles.block_list }>
                                    { collections.map((film) =>
                                        <ItemList
@@ -67,7 +66,6 @@ export const Main = observer ( () => {
                                    ) }
                             </div>
                             :
-                            // тут эскизы
                             <div className = { styles.block_thumbnails }>
                                     { collections.map((film) =>
                                         <div className={ styles.film }>

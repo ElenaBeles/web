@@ -1,5 +1,5 @@
 export interface IItemList {
-    title: string
-    img: string
-    link?: number | string | undefined
+    title: string;
+    img: string;
+    link?: number | string;
 }

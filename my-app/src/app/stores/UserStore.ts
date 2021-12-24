@@ -35,15 +35,7 @@ export class UserStore {
     }
 
     findClient = (user: UserModel) => {
-        let f : boolean = false
-        let k = this.users.length
-        for(let i = 0; i < k; i++) {
-            if (this.users[i].email == user.email && this.users[i].password == user.password) {
-                f = true
-                break
-            }
-        }
-        return f;
+        return this.users.filter(item => item.email === user.email && item.password === user.password).length === 1;
     }
 
     login = (redirect: (url : String) => void) => {

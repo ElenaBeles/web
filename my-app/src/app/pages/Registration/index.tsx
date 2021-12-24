@@ -2,7 +2,7 @@ import styles from '../Auth/index.module.sass';
 import { useEffect, useState } from "react";
 import { Button } from "../../components/ui/Button/Button";
 import { Input } from "../../components/ui/Input/Input";
-import logo from "../../pages/Auth/img/Watch_Later_Logo_Full.svg";
+import logo from "../../../assets/img/Watch_Later_Logo_Full.svg";
 import {observer} from "mobx-react";
 import {useStores} from "../../utils";
 import {Link} from "react-router-dom";
@@ -58,9 +58,10 @@ export const Registration = observer ( () => {
                 />
                 <Button
                     text = "Зарегистрироваться"
-                    onChange = { isDisabled }
+                    disabled = { isDisabled }
                     onClick = { handleAddUser }
                     className = { styles.button_in }
+                    type={ "submit" }
                 />
             </form>
 

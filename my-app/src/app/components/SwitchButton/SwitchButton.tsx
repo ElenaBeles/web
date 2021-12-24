@@ -4,13 +4,13 @@ import {ISwitchButton} from "./index.interfaces";
 import styles from "./index.module.sass";
 
 export function SwitchButton(props: ISwitchButton){
-    const { isOn, onChange, textLeft, textRight } = props;
+    const { checked, onChange, textLeft, textRight } = props;
 
     return(
         <>
             <label className = { styles.react_switch } >
                 <input
-                    checked = { isOn }
+                    checked = { checked }
                     onChange = { onChange }
                     className= { styles.react_switch_checkbox }
                     type="checkbox"

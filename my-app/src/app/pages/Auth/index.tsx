@@ -2,7 +2,7 @@ import styles from './index.module.sass';
 import { useEffect, useState } from "react";
 import { Button } from "../../components/ui/Button/Button";
 import { Input } from "../../components/ui/Input/Input";
-import logo from "./img/Watch_Later_Logo_Full.svg";
+import logo from "../../../assets/img/Watch_Later_Logo_Full.svg";
 import { useStores } from "../../utils";
 import { observer } from "mobx-react";
 import {Link, useHistory} from "react-router-dom";
@@ -33,11 +33,9 @@ export const Auth = observer ( () => {
 
     useEffect(() => {
         if (isLogin !== '' && isPassword !== '') setIsDisabled(false);
-    },[isLogin, isPassword])
-
-    useEffect(() => {
         if (isLogin === '' && isPassword === '') setIsDisabled(true);
     },[isLogin, isPassword])
+
 
     return (
         <div className={ styles.wrapper }>
@@ -61,9 +59,10 @@ export const Auth = observer ( () => {
 
                 <Button
                     text = "Войти"
-                    onChange = { isDisabled }
+                    disabled = { isDisabled }
                     onClick = { handleCheckUser }
                     className = { styles.button_in }
+                    type={ "submit" }
                 />
 
             </form>

@@ -1,16 +1,15 @@
 import React, {useState} from 'react'
 
-import logo from './img/Watch_Later_Logo_Short.svg';
-import photoProfile from './img/photo_profile.svg';
-import iconSearch from './img/IconSearch.svg';
-import plus from './img/img_plus.svg';
-import circle_active from './img/img_collection_active.svg'
-import circle from './img/img_collection.svg'
+import logo from '../../../assets/img/Watch_Later_Logo_Short.svg';
+import photoProfile from '../../../assets/img/photo_profile.svg';
+import iconSearch from '../../../assets/img/IconSearch.svg';
+import plus from '../../../assets/img/img_plus.svg';
+import circle_active from '../../../assets/img/img_collection_active.svg'
+import circle from '../../../assets/img/img_collection.svg'
 
 import styles from './index.module.sass';
 
 import {InputWithImg} from "../ui/InputWithImage/InputWithImg";
-import {useHistory} from "react-router-dom";
 import { Link } from 'react-router-dom'
 import {useLocation} from "react-router";
 
