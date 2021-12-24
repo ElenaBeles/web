@@ -65,11 +65,12 @@ export class SearchComponent {
     this.form.get("searchInput")?.reset();
   }
 
-  addFilm():void {
+  addInfoFilm(ev: any):void {
     this.filmService.addFilm(
       String(this.formFilmInfo.get("addFilmInput__title")),
       String(this.formFilmInfo.get("addFilmInput__year")),
       String(this.formFilmInfo.get("addFilmInput__description"))
     )
+    this.isFilmSearch = true
   }
 }

@@ -3,7 +3,7 @@
   class="btn"
   [class.btn--primary]="theme === 'PRIMARY'"
   [class.btn--secondary]="theme === 'SECONDARY'"
-  (click)="$event"
+  (click)="handleClick()"
 >
   <ng-content></ng-content>
 </button>

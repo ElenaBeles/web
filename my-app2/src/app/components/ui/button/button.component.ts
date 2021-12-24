@@ -1,4 +1,4 @@
-import {Component, OnInit, ChangeDetectionStrategy, Input} from '@angular/core';
+import {Component, OnInit, ChangeDetectionStrategy, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -6,15 +6,16 @@ import {Component, OnInit, ChangeDetectionStrategy, Input} from '@angular/core';
   styleUrls: ['./button.component.sass'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent{
 
   @Input() theme: 'PRIMARY' | 'SECONDARY' = 'PRIMARY';
   @Input() type: 'submit' | 'button' | 'reset' = 'button';
 
+  @Output() changeInfo = new EventEmitter();
   constructor() {
   }
 
-  ngOnInit(): void {
+  handleClick(): void{
+    this.changeInfo.emit();
   }
-
 }

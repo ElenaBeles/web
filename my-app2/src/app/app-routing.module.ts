@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: SearchComponent,
+  },
+  {
+    path: 'film/:id',
+    component: AboutFilmComponent
   }
 ];
 

@@ -34,7 +34,7 @@
                alt="">
 
           <div class="film__info">
-            <a routerLink="['/',{{item.id}}]">
+            <a [routerLink]= "['/film/', item.id]">
               <h2>{{item.title}}</h2>
             </a>
             <span>{{item.year}}</span>
@@ -85,7 +85,7 @@
         </div>
 
         <div class="wrapper_addFilm_button">
-          <app-button theme="SECONDARY" type="submit" (click)="addFilm()">
+          <app-button theme="SECONDARY" type="submit" (click)="addInfoFilm($event)">
             <img src="/assets/img/icon_plus_blue.svg" alt="">
             Сохранить
           </app-button>

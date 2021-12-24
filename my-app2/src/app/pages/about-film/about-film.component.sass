@@ -1,0 +1,74 @@
+@import "../../styles/mixins.sass"
+
+main
+  width: 100%
+
+.title
+  margin: 0
+  display: flex
+  justify-content: center
+  font-weight: bold
+  font-size: 36px
+  line-height: 41px
+  align-items: center
+  & form
+    width: 343px
+    height: 32px
+    background: rgba(118, 118, 128, 0.12)
+    border-radius: 8.91px
+
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 0 auto
+    margin-top: 82px
+    max-width: 461px
+.formSwitch
+  margin: 0 auto
+  margin-top: 35px
+  margin-left: 70px
+  width: 343px
+  height: 32px
+  background: rgba(118, 118, 128, 0.12)
+  border-radius: 8.91px
+  padding: 2px 2px
+
+.formFilmInfo
+  &__wrapper
+    max-width: 440px
+    margin: 0 auto
+    margin-top: 40px
+  &_avatar
+    margin-top: 20px
+  &__point
+    width: 100%
+    letter-spacing: -0.408px
+    outline: none
+    border: none
+    color: $c-text-input
+    &__title
+      margin-top: 20px
+      margin-bottom: 0
+      margin-left: 16px
+      @include text-22
+
+.form_input
+  height: 22px
+  box-sizing: border-box
+  outline: none
+  border: none
+  letter-spacing: -0.408px
+  @include text-17
+  &_wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    height: 60px
+    border-bottom: 0.5px solid #000000
+
+    box-sizing: border-box
+    padding: 19px 16px
+
+.wrapper_addFilm_button
+  margin: 42px 135px

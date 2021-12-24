@@ -6,7 +6,7 @@ export interface Film {
   title: string,
   year: number,
   description: string,
-  genre: string,
+  genre?: string,
   image: string
 }
 
@@ -60,18 +60,17 @@ export class FilmsService {
   }
 
   id: number = 4;
-  addFilm(title: string, year: string, description: string): void {
+  addFilm(title: string, year: string, description: string, genres?: string): void {
     MockFilms.push(
       {
         id: this.id,
         title: title,
         year: Number(year),
         description: description,
-        genre: "ужасы",
+        genre: genres,
         image: "/assets/img/minari.svg"
       }
     )
     this.id++;
   }
-  constructor() { }
 }
