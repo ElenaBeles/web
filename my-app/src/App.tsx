@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Redirect, Route, Switch, useHistory} from 'react-router-dom';
 import { Router } from 'react-router';
-import './App.css';
+import './App.sass';
 import { Provider } from 'mobx-react';
 
 import { createBrowserHistory } from 'history';
